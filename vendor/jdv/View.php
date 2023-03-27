@@ -44,9 +44,9 @@ class View
         }
     }
 
-    public function getMeta()
+    public function getMeta($param)
     {
-        $out = '<title>'.$this->meta['title'].'</title>'. PHP_EOL;
+        $out = $this->meta[$param];
         return $out;
     }
 

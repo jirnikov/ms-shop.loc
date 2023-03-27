@@ -1,14 +1,9 @@
 <?php 
 use jdv\View;
-
-/** @var $this View*/
-
+/** @var $this View */
 ?>
+<? $this->getPart('parts/header'); ?>
 
-<?php $this->getPart('parts/header'); ?>
-
-<?php echo $this->content; ?>
-
-<?php $this->getPart('parts/footer'); ?>
-
-    
+<?=$this->content;?>
+		
+<? $this->getPart('parts/footer'); ?>    

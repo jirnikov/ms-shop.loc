@@ -2,13 +2,7 @@
 
 namespace app\models;
 
-use RedBeanPHP\R;
-
-class Main extends \jdv\Model 
+class Main extends AppModel
 {
-    public function get_names(): array
-    {
-        return R::findAll('name');
-    }
-
+   
 }
