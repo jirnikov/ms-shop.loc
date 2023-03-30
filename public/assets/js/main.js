@@ -38,5 +38,12 @@ $(function() {
 			}
 		}
 	});
+	
+	$('#languages button.dropdown-item').on('click', function () {
+		console.log('ok');
+		const lang_code = $(this).data('langcode');
+		console.log(lang_code);
+		window.location = PATH + '/language/change?lang=' + lang_code;
+	});
 
 });
